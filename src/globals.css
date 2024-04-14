@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #cfcfcf;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a5a5a5;
+}
+
+* {
+  text-decoration: none;
+}
+
+@layer utilities {
+  .image-sm {
+    @apply max-sm:my-0 max-sm:mx-auto max-sm:w-full max-sm:h-[350px] max-sm:mb-[30px];
+  }
+
+  .image-md {
+    @apply max-md:my-0 max-md:mx-auto max-md:w-1/2;
+  }
+}
